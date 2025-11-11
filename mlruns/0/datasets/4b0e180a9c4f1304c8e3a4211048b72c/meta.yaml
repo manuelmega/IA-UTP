@@ -1,0 +1,19 @@
+digest: 24ef2103
+name: dataset
+profile: '{"num_rows": 692, "num_elements": 12456}'
+schema: '{"mlflow_colspec": [{"type": "long", "name": "id", "required": true}, {"type":
+  "long", "name": "age", "required": true}, {"type": "string", "name": "sex", "required":
+  true}, {"type": "string", "name": "dataset", "required": true}, {"type": "string",
+  "name": "cp", "required": true}, {"type": "double", "name": "trestbps", "required":
+  false}, {"type": "double", "name": "chol", "required": false}, {"type": "boolean",
+  "name": "fbs", "required": false}, {"type": "string", "name": "restecg", "required":
+  false}, {"type": "boolean", "name": "exang", "required": true}, {"type": "double",
+  "name": "oldpeak", "required": false}, {"type": "string", "name": "slope", "required":
+  false}, {"type": "double", "name": "ca", "required": false}, {"type": "string",
+  "name": "thal", "required": false}, {"type": "long", "name": "num", "required":
+  true}, {"type": "string", "name": "age_group", "required": true}, {"type": "long",
+  "name": "high_blood_pressure", "required": true}, {"type": "double", "name": "heart_rate_diff",
+  "required": false}]}'
+source: '{"tags": {"mlflow.user": "manuel", "mlflow.source.name": "modelo_t2.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

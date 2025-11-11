@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/bad23d48bbe14019bc50303a9b8acc50/artifacts
+end_time: 1762874453854
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bad23d48bbe14019bc50303a9b8acc50
+run_name: bouncy-kit-593
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762874440914
+status: 3
+tags: []
+user_id: manuel

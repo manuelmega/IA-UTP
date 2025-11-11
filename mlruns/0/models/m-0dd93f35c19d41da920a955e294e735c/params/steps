@@ -1,0 +1,10 @@
+[('preprocessor', ColumnTransformer(transformers=[('num',
+                                 Pipeline(steps=[('imputer', SimpleImputer()),
+                                                 ('scaler', StandardScaler())]),
+                                 Index(['id', 'age', 'trestbps', 'chol', 'oldpeak', 'ca', 'num',
+       'high_blood_pressure', 'heart_rate_diff'],
+      dtype='object')),
+                                ('cat', OneHotEncoder(handle_unknown='ignore'),
+                                 Index(['sex', 'dataset', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'thal',
+       'age_group'],
+      dtype='object'))])), ('regressor', LinearRegression())]

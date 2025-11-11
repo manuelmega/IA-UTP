@@ -1,0 +1,13 @@
+digest: ef263b33
+name: dataset
+profile: '{"num_rows": 692, "num_elements": 6228}'
+schema: '{"mlflow_colspec": [{"type": "long", "name": "id", "required": true}, {"type":
+  "long", "name": "age", "required": true}, {"type": "double", "name": "trestbps",
+  "required": false}, {"type": "double", "name": "chol", "required": false}, {"type":
+  "double", "name": "oldpeak", "required": false}, {"type": "double", "name": "ca",
+  "required": false}, {"type": "long", "name": "num", "required": true}, {"type":
+  "long", "name": "high_blood_pressure", "required": true}, {"type": "double", "name":
+  "heart_rate_diff", "required": false}]}'
+source: '{"tags": {"mlflow.user": "manuel", "mlflow.source.name": "modelo_t2.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

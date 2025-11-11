@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/a694f104680c418dbde8e3677f979bbc/artifacts
+end_time: 1762876363013
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a694f104680c418dbde8e3677f979bbc
+run_name: suave-moose-363
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762876354695
+status: 3
+tags: []
+user_id: manuel

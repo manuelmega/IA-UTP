@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/ac6a4a6d45bb4a95847785716ccb6801/artifacts
+end_time: 1762875416081
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ac6a4a6d45bb4a95847785716ccb6801
+run_name: glamorous-wolf-921
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762875407304
+status: 3
+tags: []
+user_id: manuel

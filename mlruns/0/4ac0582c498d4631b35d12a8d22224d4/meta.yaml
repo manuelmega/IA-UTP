@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/4ac0582c498d4631b35d12a8d22224d4/artifacts
+end_time: 1762874597440
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4ac0582c498d4631b35d12a8d22224d4
+run_name: casual-cat-580
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762874587343
+status: 3
+tags: []
+user_id: manuel
