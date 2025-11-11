@@ -440,31 +440,29 @@ uvicorn api:app --reload
 
 Este proyecto integra MLflow para el seguimiento de experimentos y gestión de modelos, y FastAPI para la exposición del modelo entrenado como un servicio web.
 
-1.  **Entrenamiento y Seguimiento con MLflow (`modelo_t2.py`)**:
-    *   El script `modelo_t2.py` entrena un modelo de regresión lineal para predecir la frecuencia cardíaca máxima (`thalch`).
-    *   **MLflow Tracking**: Cada ejecución del script se registra como un "run" en MLflow. Esto incluye:
-        *   **Parámetros**: Los hiperparámetros del modelo (aunque en este caso `LinearRegression` no tiene muchos ajustables, MLflow registra los predeterminados).
-        *   **Métricas**: Métricas de evaluación como el Error Cuadrático Medio (MSE) y el Coeficiente de Determinación (R²) se registran automáticamente gracias a `mlflow.sklearn.autolog()`.
-        *   **Artefactos**: El modelo entrenado (un pipeline que incluye preprocesamiento y el regresor) se guarda como un artefacto en el formato `mlflow.pyfunc`, lo que facilita su posterior carga y uso.
-    *   **Interfaz de Usuario (UI) de MLflow**: Al ejecutar `mlflow ui`, se despliega una interfaz web donde se pueden visualizar y comparar todos los "runs" del experimento.
+**Entrenamiento y Seguimiento con MLflow (`modelo_t2.py`)**
+El script `modelo_t2.py` entrena un modelo de regresión lineal para predecir la frecuencia cardíaca máxima (`thalch`).
+  **MLflow Tracking**: Cada ejecución del script se registra como un "run" en MLflow. Esto incluye:
+  **Parámetros**: Los hiperparámetros del modelo (aunque en este caso `LinearRegression` no tiene muchos ajustables, MLflow registra los predeterminados).
+  **Métricas**: Métricas de evaluación como el Error Cuadrático Medio (MSE) y el Coeficiente de Determinación (R²) se registran automáticamente gracias a `mlflow.sklearn.autolog()`.
+  **Artefactos**: El modelo entrenado (un pipeline que incluye preprocesamiento y el regresor) se guarda como un artefacto en el formato `mlflow.pyfunc`, lo que facilita su posterior carga y uso.
+  **Interfaz de Usuario (UI) de MLflow**: Al ejecutar `mlflow ui`, se despliega una interfaz web donde se pueden visualizar y comparar todos los "runs" del experimento.
 
-    **Resultados en la UI de MLflow:**
+**Resultados en la UI de MLflow**
 
-  **Lista de Experimentos**: La UI muestra un listado de los experimentos, donde cada fila representa un "run" con sus métricas y parámetros principales.
-
+**Lista de Experimentos**
+La UI muestra un listado de los experimentos, donde cada fila representa un "run" con sus métricas y parámetros principales.
 ![MLflow UI - Runs List](./assets/mlflow_ui_runs_list.png)
 
 
 **Detalle de un Run** 
 Al hacer clic en un "run" específico, se puede ver un detalle completo que incluye:
-**Parámetros**: Los parámetros utilizados para el entrenamiento.
-  **Métricas** Los valores de MSE y R² obtenidos.
-  **Artefactos**: Aquí se encuentra el modelo guardado, listo para ser cargado.
-
+**Parámetros** Los parámetros utilizados para el entrenamiento.
+**Métricas** Los valores de MSE y R² obtenidos.
+**Artefactos** Aquí se encuentra el modelo guardado, listo para ser cargado.
 ![MLflow UI - Run Details](./assets/mlflow_ui_run_details.png)
 
-1.  **Exposición del Modelo con FastAPI (`api.py`)**
-* El script `api.py` crea una API RESTful utilizando FastAPI.
-
+**Exposición del Modelo con FastAPI (`api.py`)**
+El script `api.py` crea una API RESTful utilizando FastAPI.
 ![MLflow UI - Run Details](./assets/api.png)
     
